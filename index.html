@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Yassine Kilani — Telecommunication Engineering & Network Security Portfolio</title>
+  <meta name="description" content="Portfolio of Mohamed Yassine Kilani — Telecommunication Engineering Student at ISITCOM Sousse specializing in Network Engineering, BGP EVPN Multihoming, IPsec VPN, Cloud, and Cybersecurity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas class="bg-canvas" id="bgCanvas"></canvas>
+
+<!-- CUSTOM CURSOR -->
+<div class="custom-cursor-dot" id="cursorDot"></div>
+<div class="custom-cursor-ring" id="cursorRing"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo" id="navLogo">
+      <span class="logo-badge">YK</span>
+      <span class="logo-text">Mohamed Yassine Kilani</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#experience" class="nav-item">Experience</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#education" class="nav-item">Education</a>
+      <a href="#certifications" class="nav-item">Certifications</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#design" class="nav-item">Design</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <a href="mon cv.pdf" download="Mohamed_Yassine_Kilani_CV.pdf" class="btn btn-sm btn-accent" id="navCvBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download CV
+      </a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-pulse"></span>
+        3rd-Year Bachelor Student in Communication · Seeking PFE Internship
+      </div>
+      <h1 class="hero-title">
+        Mohamed<br><span class="accent-text">Yassine Kilani</span>
+      </h1>
+      <p class="hero-sub">
+        Motivated <strong>3rd-year Bachelor student in Telecommunication </strong> at ISITCOM Sousse. Skilled in <strong>computer networks, cybersecurity, cloud architecture</strong>, and <strong>graphic design</strong> with recognized industry certifications. Actively seeking an impactful <strong>PFE graduation internship</strong>.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="mon cv.pdf" target="_blank" download="Mohamed_Yassine_Kilani_CV.pdf" class="btn btn-outline" id="heroCvBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    
+    <div class="hero-visual">
+      <div class="profile-card tilt-card" id="profileCard">
+        <div class="avatar-wrapper hero-avatar-large">
+          <div class="avatar-ring"></div>
+          <img src="profile.jpg" alt="Mohamed Yassine Kilani" class="profile-img" />
+          <div class="online-indicator" title="Available for opportunities"></div>
+        </div>
+        <div class="card-details">
+          <h3 class="card-name">Mohamed Yassine Kilani</h3>
+          <p class="card-role">3rd-Year Bachelor in Communication @ ISITCOM Sousse</p>
+          <div class="card-tags">
+            <span class="mini-tag">📡 EVPN / MPLS</span>
+            <span class="mini-tag">🔒 IPsec VPN</span>
+            <span class="mini-tag">☁️ AWS</span>
+          </div>
+          <div class="avatar-stats">
+            <div class="stat-box">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Major Projects</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">5</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">Ooredoo</div>
+              <div class="stat-label">Internship</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">Cisco / Nokia</div>
+              <div class="stat-label">Lab Tech</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section-container">
+  <div class="reveal">
+    <span class="section-tag">Who I Am</span>
+    <h2 class="section-title">About Me</h2>
+    <p class="section-lead">Motivated 3rd-year communication engineering student passionate about networking, cybersecurity, creative design, and innovation.</p>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>Hi! I'm <strong>Mohamed Yassine Kilani</strong>, a <strong>third-year student pursuing a Bachelor's Degree in Communication</strong> (Telecommunications) at <strong>ISITCOM Sousse</strong>. I have built solid practical skills in <strong>computer networks, enterprise security, and cloud infrastructure</strong>, validated by multiple industry <strong>certifications</strong> including AWS Cloud Practitioner and Cisco Ethical Hacker.</p>
+      <p>Alongside my technical foundation, I bring creative expertise in <strong>graphic design</strong> with Adobe Photoshop. Highly motivated, adaptable, and eager to tackle real-world engineering challenges, I am actively seeking an inspiring <strong> PFE (End-of-Studies) graduation internship</strong>.</p>
+    </div>
+    <div class="about-cards">
+      <div class="info-card">
+        <div class="info-icon">🏛️</div>
+        <div>
+          <div class="info-label">University</div>
+          <div class="info-val">ISITCOM Sousse, Tunisia</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🎓</div>
+        <div>
+          <div class="info-label">Academic Level</div>
+          <div class="info-val">3rd Year Bachelor · Seeking PFE Internship</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">📍</div>
+        <div>
+          <div class="info-label">Location</div>
+          <div class="info-val">Sousse / Tunis, Tunisia</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🌐</div>
+        <div>
+          <div class="info-label">Languages</div>
+          <div class="info-val">Arabic (Native), English (Expert), French (Fluent), Spanish</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">📄</div>
+        <div>
+          <div class="info-label">Resume / CV</div>
+          <div class="info-val">
+            <a href="mon cv.pdf" download="Mohamed_Yassine_Kilani_CV.pdf" class="link-btn">Download PDF ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="section-container">
+  <div class="reveal">
+    <span class="section-tag">Career Journey</span>
+    <h2 class="section-title">Work Experience & Internships</h2>
+    <p class="section-lead">Hands-on practical experience in telecommunications, service provider backbones, and network architecture.</p>
+  </div>
+
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="timeline-marker">
+        <div class="marker-dot"></div>
+      </div>
+      <div class="timeline-content glass-card tilt-card">
+        <div class="exp-header">
+          <div>
+            <div class="exp-badge">Summer Internship</div>
+            <h3 class="exp-title">Network Engineering Intern — EVPN Multihoming Deployment</h3>
+            <div class="exp-company">📡 Ooredoo Tunisia · Telecommunication & Networking Division</div>
+          </div>
+          <div class="exp-date">Sousse / Tunis, Tunisia</div>
+        </div>
+        <p class="exp-desc">
+          Conducted an intensive internship at <strong>Ooredoo Tunisia</strong> focused on service provider network design, high availability, and BGP EVPN multihoming service deployment.
+        </p>
+        <ul class="exp-highlights">
+          <li><strong>Architecture & Emulation:</strong> Built and emulated a multi-node Nokia 7750 SR backbone in EVE-NG to test BGP EVPN multihoming implementations.</li>
+          <li><strong>Routing Protocol Suite:</strong> Configured <strong>IS-IS (Area 49.0001)</strong> as the IGP backbone and <strong>RSVP-TE MPLS LSPs</strong> for traffic engineering.</li>
+          <li><strong>BGP EVPN Services:</strong> Established an iBGP full-mesh (AS 65000) carrying EVPN, L2-VPN, and VPN-IPv4 address families for multi-tenant VPLS EVPN service (EVI 100).</li>
+          <li><strong>Active-Active Multihoming:</strong> Configured Ethernet Segment Identifiers (ESI <code>01:22:22:22:22:22:22:22:22:22</code>) on dual-homed PE routers to achieve all-active multihoming redundancy without Spanning Tree loops.</li>
+          <li><strong>Failover Validation:</strong> Performed link interruption tests, proving automatic traffic re-routing and continuous service availability for enterprise customers.</li>
+        </ul>
+        <div class="tech-stack">
+          <span class="tech-chip">Nokia 7750 SR</span>
+          <span class="tech-chip">BGP EVPN</span>
+          <span class="tech-chip">MPLS RSVP-TE</span>
+          <span class="tech-chip">IS-IS IGP</span>
+          <span class="tech-chip">EVPN Multihoming</span>
+          <span class="tech-chip">EVE-NG</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section-container">
+  <div class="reveal">
+    <span class="section-tag">Engineering Showcase</span>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-lead">In-depth technical implementations spanning enterprise security, service provider backbones, and software engine development.</p>
+  </div>
+
+  <div class="projects-grid reveal">
+    
+    <!-- PROJECT 1 -->
+    <div class="project-card glass-card tilt-card">
+      <div class="project-header">
+        <div class="project-icon">🛡️</div>
+        <span class="project-category">Enterprise Security & IPsec</span>
+      </div>
+      <h3 class="project-title">Multi-Site Secure Enterprise Network</h3>
+      <p class="project-subtitle">3-Site Full-Mesh IPsec VPN with SVI Access Control Lists & SMB Demonstration</p>
+      <p class="project-desc">
+        Designed, configured, and validated a complete multi-site enterprise network infrastructure in EVE-NG interconnecting a Headquarters and two Branch locations through a simulated public Internet WAN.
+      </p>
+      <div class="project-details-box">
+        <h4 class="details-heading">Key Accomplishments:</h4>
+        <ul class="project-bullets">
+          <li><strong>Full-Mesh IPsec Overlay:</strong> Configured IKEv2 policy, AES-256 encryption, SHA-256 integrity, DH Group 14, and pre-shared key authentication across ASAv firewalls.</li>
+          <li><strong>Departmental Segmentation:</strong> Built VLAN 10 (HR), VLAN 20 (Finance), and VLAN 30 (IT) at each site with Layer 3 SVI gateways on Cisco switches.</li>
+          <li><strong>Access Control Lists:</strong> Applied inbound SVI extended ACLs enforcing strict same-department communication across sites while blocking cross-department lateral movement.</li>
+          <li><strong>Verification & Failover:</strong> Executed controlled WAN link shutdowns to prove automatic IKEv2 tunnel recovery, inspected ASA Syslog buffered logs, and demonstrated authenticated Windows SMB file sharing across the encrypted tunnel.</li>
+        </ul>
+      </div>
+      <div class="tech-stack">
+        <span class="tech-chip">EVE-NG</span>
+        <span class="tech-chip">Cisco ASAv</span>
+        <span class="tech-chip">IKEv2 / IPsec</span>
+        <span class="tech-chip">Cisco L3 Switches</span>
+        <span class="tech-chip">Extended ACLs</span>
+        <span class="tech-chip">SMB File Share</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card glass-card tilt-card">
+      <div class="project-header">
+        <div class="project-icon">📡</div>
+        <span class="project-category">Service Provider & High Availability</span>
+      </div>
+      <h3 class="project-title">ISP Backbone Network & High Availability</h3>
+      <p class="project-subtitle">Nokia 7750 SR Core with BGP EVPN Active-Active Multihoming</p>
+      <p class="project-desc">
+        Engineered a scalable Service Provider network architecture using Nokia 7750 SR routers simulated in EVE-NG to deliver high availability VPLS and L3VPN services.
+      </p>
+      <div class="project-details-box">
+        <h4 class="details-heading">Key Accomplishments:</h4>
+        <ul class="project-bullets">
+          <li><strong>IGP & MPLS Backbone:</strong> Deployed IS-IS (Area 49.0001) for interior routing and established RSVP-TE LSPs with explicit paths between PE routers.</li>
+          <li><strong>Multiprotocol BGP:</strong> Configured iBGP full-mesh (AS 65000) exchanging EVPN, L2-VPN, and VPN-IPv4 route targets.</li>
+          <li><strong>EVPN Service (EVI 100):</strong> Configured VPLS EVPN customer instances with Route Target <code>target:65000:100</code>.</li>
+          <li><strong>Active-Active Multihoming:</strong> Implemented shared Ethernet Segment Identifiers (ESI) across PE routers to achieve load balancing and sub-second failover for dual-homed customer sites.</li>
+        </ul>
+      </div>
+      <div class="tech-stack">
+        <span class="tech-chip">Nokia 7750 SR</span>
+        <span class="tech-chip">BGP EVPN</span>
+        <span class="tech-chip">MPLS RSVP-TE</span>
+        <span class="tech-chip">IS-IS Routing</span>
+        <span class="tech-chip">VPLS / L3VPN</span>
+        <span class="tech-chip">EVE-NG</span>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card glass-card tilt-card">
+      <div class="project-header">
+        <div class="project-icon">🎮</div>
+        <span class="project-category">Software Development & C++</span>
+      </div>
+      <h3 class="project-title">C++ Tetris Arcade Game Engine</h3>
+      <p class="project-subtitle">Desktop Game Engine with Matrix Collision & SFML Graphical Interface</p>
+      <p class="project-desc">
+        Developed a feature-complete Tetris game from scratch in modern C++ utilizing the SFML library for real-time graphics rendering and player controls.
+      </p>
+      <div class="project-details-box">
+        <h4 class="details-heading">Key Accomplishments:</h4>
+        <ul class="project-bullets">
+          <li><strong>Grid & Rotation Logic:</strong> Implemented custom matrix data structures for Tetromino shape definitions, piece rotation matrixes, and wall-kick bounds checking.</li>
+          <li><strong>Collision & Line Clearing:</strong> Programmed collision detection algorithms, full row line clearing mechanics, score multiplier tracking, and progressive speed scaling.</li>
+          <li><strong>Object-Oriented Design:</strong> Structured code into modular C++ classes (<code>Board</code>, <code>Tetromino</code>, <code>Constants</code>) for clean code maintenance and efficiency.</li>
+        </ul>
+      </div>
+      <div class="tech-stack">
+        <span class="tech-chip">C++</span>
+        <span class="tech-chip">SFML Graphics</span>
+        <span class="tech-chip">OOP Design</span>
+        <span class="tech-chip">Game Logic</span>
+        <span class="tech-chip">VS Code</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section id="education" class="section-container">
+  <div class="reveal">
+    <span class="section-tag">Academic Background</span>
+    <h2 class="section-title">Education</h2>
+    <p class="section-lead">Building a rigorous engineering foundation in computer networks, telecommunications, and mathematics.</p>
+  </div>
+  <div class="edu-grid reveal">
+    
+    <div class="edu-card glass-card tilt-card">
+      <div class="edu-icon">🏛️</div>
+      <div class="edu-info">
+        <h3 class="edu-school">Higher Institute of Computer Science and Communication Technologies (ISITCOM)</h3>
+        <div class="edu-degree">Bachelor in Telecommunication (3rd Year)</div>
+        <div class="edu-meta">Hammam Sousse · Sousse, Tunisia | <strong>2024 – 2027</strong></div>
+        <p class="edu-desc">Specialized training in IP Networking, Routing & Switching, Network Security, BGP EVPN Multihoming, Cloud Infrastructure, Wireless Systems, and Software Engineering.</p>
+      </div>
+    </div>
+
+    <div class="edu-card glass-card tilt-card">
+      <div class="edu-icon">📐</div>
+      <div class="edu-info">
+        <h3 class="edu-school">Private School of Kairouan EMI</h3>
+        <div class="edu-degree">Baccalaureate in Mathematics</div>
+        <div class="edu-meta">Kairouan, Tunisia | <strong>2023 – 2024</strong></div>
+        <p class="edu-desc">Rigorous training with a strong foundation in advanced mathematics, analytical reasoning, physics, and computational logic.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS SECTION -->
+<section id="certifications" class="section-container">
+  <div class="reveal">
+    <span class="section-tag">Credentials</span>
+    <h2 class="section-title">Certifications</h2>
+    <p class="section-lead">Industry-recognized professional certifications validating technical skills in Cloud, Security, and AI. Click any certificate to preview details!</p>
+  </div>
+  <div class="certs-grid reveal">
+    
+    <div class="cert-card glass-card tilt-card clickable-card" data-modal="cert-aws" data-title="AWS Certified Cloud Practitioner Essentials" data-issuer="Amazon Web Services (AWS)" data-tag="Cloud Computing" data-icon="☁️" data-desc="Validates overall understanding of AWS Cloud platform, architectural principles, security controls, IAM, EC2, S3, and billing management.">
+      <div class="cert-badge aws">☁️</div>
+      <div class="cert-info">
+        <div class="cert-name">AWS Cloud Practitioner Essentials</div>
+        <div class="cert-issuer">Amazon Web Services (AWS)</div>
+        <span class="cert-tag">Cloud Computing</span>
+      </div>
+    </div>
+
+    <div class="cert-card glass-card tilt-card clickable-card" data-modal="cert-cisco-hacker" data-title="Ethical Hacker Certificate" data-issuer="Cisco Networking Academy" data-tag="Cybersecurity" data-icon="🛡️" data-desc="Demonstrates proficiency in penetration testing methodologies, vulnerability exploitation, network reconnaissance, offensive security tools, and countermeasures.">
+      <div class="cert-badge cisco">🛡️</div>
+      <div class="cert-info">
+        <div class="cert-name">Ethical Hacker</div>
+        <div class="cert-issuer">Cisco Networking Academy</div>
+        <span class="cert-tag">Cybersecurity</span>
+      </div>
+    </div>
+
+    <div class="cert-card glass-card tilt-card clickable-card" data-modal="cert-ml" data-title="Fundamentals of Machine Learning & AI" data-issuer="Cisco Networking Academy" data-tag="AI & Machine Learning" data-icon="🤖" data-desc="Covers core concepts of artificial intelligence, supervised/unsupervised machine learning models, neural networks, data preprocessing, and model evaluation.">
+      <div class="cert-badge ml">🤖</div>
+      <div class="cert-info">
+        <div class="cert-name">Fundamentals of Machine Learning & AI</div>
+        <div class="cert-issuer">Cisco Networking Academy</div>
+        <span class="cert-tag">AI & Machine Learning</span>
+      </div>
+    </div>
+
+    <div class="cert-card glass-card tilt-card clickable-card" data-modal="cert-cisco-intro" data-title="Introduction to Cybersecurity" data-issuer="Cisco Networking Academy" data-tag="Cybersecurity" data-icon="🔐" data-desc="Covers cybersecurity fundamentals, threat landscapes, encryption methods, network defense strategies, and digital privacy principles.">
+      <div class="cert-badge cisco">🔐</div>
+      <div class="cert-info">
+        <div class="cert-name">Introduction to Cybersecurity</div>
+        <div class="cert-issuer">Cisco Networking Academy</div>
+        <span class="cert-tag">Cybersecurity</span>
+      </div>
+    </div>
+
+    <div class="cert-card glass-card tilt-card clickable-card" data-modal="cert-py" data-title="Python Essentials 1" data-issuer="Cisco Networking Academy" data-tag="Programming" data-icon="🐍" data-desc="Validates core Python programming skills, object-oriented programming concepts, algorithms, control flow, functions, and data structures.">
+      <div class="cert-badge py">🐍</div>
+      <div class="cert-info">
+        <div class="cert-name">Python Essentials 1</div>
+        <div class="cert-issuer">Cisco Networking Academy</div>
+        <span class="cert-tag">Programming</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="section-container">
+  <div class="reveal">
+    <span class="section-tag">Core Competencies</span>
+    <h2 class="section-title">Skills & Expertise</h2>
+    <p class="section-lead">A balanced combination of telecommunication engineering, cybersecurity, cloud architecture, software, and creative design.</p>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-card glass-card tilt-card">
+      <div class="skill-icon">📡</div>
+      <h3 class="skill-name">Network Engineering</h3>
+      <p class="skill-level">BGP EVPN Multihoming, MPLS RSVP-TE, IS-IS, OSPF, VLANs, L2/L3 VPNs, Nokia 7750 SR, Cisco Routers/Switches & EVE-NG emulation.</p>
+    </div>
+    <div class="skill-card glass-card tilt-card">
+      <div class="skill-icon">🛡️</div>
+      <h3 class="skill-name">Cybersecurity & VPNs</h3>
+      <p class="skill-level">Cisco ASAv Firewalls, Full-Mesh IPsec VPN (IKEv2), SVI Access Control Lists, Penetration Testing, Wireshark & Ethical Hacking.</p>
+    </div>
+    <div class="skill-card glass-card tilt-card">
+      <div class="skill-icon">☁️</div>
+      <h3 class="skill-name">Cloud & Systems</h3>
+      <p class="skill-level">AWS (Certified Cloud Practitioner), Linux (Ubuntu, Debian), Virtualization, Virtual Private Clouds (VPC), IAM & Security Groups.</p>
+    </div>
+    <div class="skill-card glass-card tilt-card">
+      <div class="skill-icon">💻</div>
+      <h3 class="skill-name">Programming & Scripting</h3>
+      <p class="skill-level">Python (Automation, Scripting), C++ (Object-Oriented Programming, Data Structures, SFML Game Engine), Shell Scripting & Git/GitHub.</p>
+    </div>
+    <div class="skill-card glass-card tilt-card">
+      <div class="skill-icon">🎨</div>
+      <h3 class="skill-name">Graphic Design & Creative</h3>
+      <p class="skill-level">Adobe Photoshop, visual posters, thumbnail design, branding layouts, social media artwork, composition, and digital typography.</p>
+    </div>
+    <div class="skill-card glass-card tilt-card">
+      <div class="skill-icon">🚀</div>
+      <h3 class="skill-name">Professional & Soft Skills</h3>
+      <p class="skill-level">High motivation, fast learner, analytical reasoning, problem solving, team collaboration, technical documentation, and PFE internship readiness.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DESIGN PORTFOLIO SECTION -->
+<section id="design" class="section-container">
+  <div class="reveal">
+    <span class="section-tag">Creative Work</span>
+    <h2 class="section-title">Design Portfolio</h2>
+    <p class="section-lead">Graphic design projects created with Adobe Photoshop — click any project to view full-screen image!</p>
+  </div>
+  <div class="reveal" style="margin-bottom: 2rem;">
+    <a href="https://www.behance.net/gallery/215406723/Designs-that-speak-First-ever-designs-in-my-lab" target="_blank" rel="noopener" class="behance-btn">
+      🎨 View Full Gallery on Behance ↗
+    </a>
+  </div>
+  <div class="design-grid reveal">
+    
+    <div class="design-card glass-card tilt-card clickable-design" data-img="https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/ceef73215406723.676adcd3515b0.png" data-title="Graphic Poster — Vol. 1" data-tool="Adobe Photoshop">
+      <img class="design-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/ceef73215406723.676adcd3515b0.png" alt="Graphic poster design" loading="lazy"/>
+      <div class="design-info">
+        <div class="design-title">Graphic Poster — Vol. 1</div>
+        <div class="design-tool">Adobe Photoshop ↗ (Click to Expand)</div>
+      </div>
+    </div>
+
+    <div class="design-card glass-card tilt-card clickable-design" data-img="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d60ba1215406723.676adcd35299b.png" data-title="Thumbnail Design" data-tool="Adobe Photoshop">
+      <img class="design-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d60ba1215406723.676adcd35299b.png" alt="Thumbnail design" loading="lazy"/>
+      <div class="design-info">
+        <div class="design-title">Thumbnail Design</div>
+        <div class="design-tool">Adobe Photoshop ↗ (Click to Expand)</div>
+      </div>
+    </div>
+
+    <div class="design-card glass-card tilt-card clickable-design" data-img="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/43f0ed215406723.676adcd3521af.png" data-title="Visual Composition" data-tool="Adobe Photoshop">
+      <img class="design-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/43f0ed215406723.676adcd3521af.png" alt="Visual composition" loading="lazy"/>
+      <div class="design-info">
+        <div class="design-title">Visual Composition</div>
+        <div class="design-tool">Adobe Photoshop ↗ (Click to Expand)</div>
+      </div>
+    </div>
+
+    <div class="design-card glass-card tilt-card clickable-design" data-img="https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/0a55d8215406723.676adcd352d8a.png" data-title="Freelance Poster" data-tool="Adobe Photoshop">
+      <img class="design-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/0a55d8215406723.676adcd352d8a.png" alt="Freelance poster" loading="lazy"/>
+      <div class="design-info">
+        <div class="design-title">Freelance Poster</div>
+        <div class="design-tool">Adobe Photoshop ↗ (Click to Expand)</div>
+      </div>
+    </div>
+
+    <div class="design-card glass-card tilt-card clickable-design" data-img="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/56a61c215406723.676adcd351d84.png" data-title="Creative Design — Vol. 2" data-tool="Adobe Photoshop">
+      <img class="design-img" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/56a61c215406723.676adcd351d84.png" alt="Creative design" loading="lazy"/>
+      <div class="design-info">
+        <div class="design-title">Creative Design — Vol. 2</div>
+        <div class="design-tool">Adobe Photoshop ↗ (Click to Expand)</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOBBIES SECTION -->
+<section id="hobbies" class="section-container">
+  <div class="reveal">
+    <span class="section-tag">Personal Interests</span>
+    <h2 class="section-title">Hobbies & Passions</h2>
+    <p class="section-lead">Activities that keep me creative, active, and continually learning outside of studying.</p>
+  </div>
+  <div class="hobbies-grid reveal">
+    <div class="hobby-card glass-card tilt-card">
+      <div class="hobby-emoji">🎮</div>
+      <h3 class="hobby-title">Gaming</h3>
+      <p class="hobby-desc">From competitive multiplayer games to strategy titles — gaming keeps my tactical problem-solving and focus sharp.</p>
+    </div>
+    <div class="hobby-card glass-card tilt-card">
+      <div class="hobby-emoji">⚽</div>
+      <h3 class="hobby-title">Sports & Fitness</h3>
+      <p class="hobby-desc">Regular gym training, football, basketball, tennis, and swimming build teamwork, discipline, and endurance.</p>
+    </div>
+    <div class="hobby-card glass-card tilt-card">
+      <div class="hobby-emoji">🔐</div>
+      <h3 class="hobby-title">CTF & Home Labs</h3>
+      <p class="hobby-desc">Exploring cybersecurity Capture-The-Flag challenges and building virtual networking labs is my genuine passion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section-container">
+  <div class="contact-box glass-card reveal">
+    <span class="section-tag">Let's Connect</span>
+    <h2>Get In Touch</h2>
+    <p>Whether you have a job opportunity, a networking project, or just want to discuss tech — I'd love to hear from you!</p>
+    
+    <div class="contact-links">
+      <a href="mailto:yassinekilenii@gmail.com" class="contact-link">✉️ yassinekilenii@gmail.com</a>
+      <a href="https://www.linkedin.com/in/yassine-kilani-9496892b5/?locale=fr" target="_blank" rel="noopener" class="contact-link">💼 LinkedIn Profile</a>
+      <a href="https://github.com/yassinekileni" target="_blank" rel="noopener" class="contact-link">🐙 GitHub</a>
+      <a href="https://www.behance.net/yassinekileni" target="_blank" rel="noopener" class="contact-link">🎨 Behance</a>
+    </div>
+
+    
+  </div>
+</section>
+
+<!-- LIGHTBOX MODAL -->
+<div id="lightboxModal" class="modal-backdrop" aria-hidden="true">
+  <div class="modal-card glass-card">
+    <button id="modalClose" class="modal-close" aria-label="Close modal">&times;</button>
+    <div id="modalBody" class="modal-body"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <center>
+  <div class="footer-container">
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/yassine-kilani-9496892b5/?locale=fr" target="_blank">LinkedIn</a>
+      <a href="mon cv.pdf" download="Mohamed_Yassine_Kilani_CV.pdf">Download CV</a>
+      <a href="#hero">Back to Top ↑</a>
+    </div>
+  </div>
+  </center>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
